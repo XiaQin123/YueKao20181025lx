@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.xiaqin.yuekao20181025lx.fragment.GWFragment">
+<ExpandableListView
+    android:id="@+id/elc_show_gw"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#fff"
+    ></ExpandableListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/cb_allCheck_gw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/btn_allPrice_gw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="价格"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/btn_allNumber_gw"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="去结算(0)"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+

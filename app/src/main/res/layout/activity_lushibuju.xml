@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.xiaqin.yuekao20181025lx.LushibujuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/lushi_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            />
+        <EditText
+            android:id="@+id/lushi_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:hint="麻辣烫"
+            />
+        <Button
+            android:id="@+id/lushi_butt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#eee"
+            android:text="搜索"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="热门搜索"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+<com.bwie.xiaqin.yuekao20181025lx.lushi.myview.flow
+    android:id="@+id/hot"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    ></com.bwie.xiaqin.yuekao20181025lx.lushi.myview.flow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="搜索历史"
+            android:textColor="#000"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:id="@+id/delect"
+            android:layout_marginRight="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_delete_black_24dp"
+            />
+    </RelativeLayout>
+    <com.bwie.xiaqin.yuekao20181025lx.lushi.myview.flow
+        android:id="@+id/lushi_flow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.bwie.xiaqin.yuekao20181025lx.lushi.myview.flow>
+</LinearLayout>
